@@ -12,7 +12,8 @@
     "url": "git+https://github.com/aelnko/frontend-project-lvl1.git"
   },
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,7 @@
   },
   "homepage": "https://github.com/aelnko/frontend-project-lvl1#readme",
   "dependencies": {
-    "readline-sync": "1.4.10"
+    "readline-sync": "^1.4.10"
   },
   "devDependencies": {
     "eslint": "^8.13.0",

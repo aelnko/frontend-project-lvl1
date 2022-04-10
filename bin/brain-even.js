@@ -1,4 +1,7 @@
 import readlineSync from 'readline-sync';
+import { greet, getName } from '../src/cli.js';
+
+const [result, name] = greet();
 
 const gameRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -8,40 +11,44 @@ const randomizer = () => {
   return result;
 };
 
-const yourAnswer = () => {
+const getYourAnswer = () => {
   const value = readlineSync.question('Your answer: ');
   return value;
-}
+};
 
-const correctAnswer = (resultOfRandomizer) => {
+const getCorrectAnswer = (resultOfRandomizer) => {
+  let result = '';
   if (resultOfRandomizer % 2 === 0) {
-    return 'yes';
+    result = 'yes';
+    return result
   };
   if (resultOfRandomizer % 2 !== 0) {
-    return 'no';
-  };
+    result = 'no';
+    return result;
+  }
 };
 
 const isAnswerCorrect = (answer, resultOfCorrectAnswer) => {
-  let result = '';
   if (answer === resultOfCorrectAnswer) {
-    result = 'Correct!';
-    console.log(result);
-  };
+    console.log('Correct!');
+  }
   if (answer !== resultOfCorrectAnswer) {
-    result = `'${answer}' is wrong answer ;(. Correct answer was '${resultOfCorrectAnswer}'.`;
-    console.log(result);
-  };
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${resultOfCorrectAnswer}'.`);
+  }
 }
 
 const isEvenGame = () => {
   console.log(gameRules);
-  const resultOfRandomizer = (randomizer());
+  const resultOfRandomizer = randomizer();
   console.log(`Question: ${resultOfRandomizer}`);
-  const answer = yourAnswer();
-  const resultOfCorrectAnswer = correctAnswer();
-  console.log(resultOfCorrectAnswer);
-  isAnswerCorrect();
+  const answer = getYourAnswer();
+  const resultOfCorrectAnswer = getCorrectAnswer(resultOfRandomizer);
+  isAnswerCorrect(answer, resultOfCorrectAnswer);
 };
-
-isEvenGame();
+let i = 0;
+ while (i < 3) {
+  isEvenGame();
+  i+=1;
+ };
+ console.log(`Congratulations, ${name}`)
+ 
