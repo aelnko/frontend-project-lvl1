@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import { greet, getName } from '../src/cli.js';
 
@@ -31,6 +32,7 @@ const getCorrectAnswer = (resultOfRandomizer) => {
 const isAnswerCorrect = (answer, resultOfCorrectAnswer) => {
   if (answer === resultOfCorrectAnswer) {
     console.log('Correct!');
+    i += 1;
   }
   if (answer !== resultOfCorrectAnswer) {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was '${resultOfCorrectAnswer}'.`);
@@ -44,11 +46,11 @@ const isEvenGame = () => {
   const answer = getYourAnswer();
   const resultOfCorrectAnswer = getCorrectAnswer(resultOfRandomizer);
   isAnswerCorrect(answer, resultOfCorrectAnswer);
-};
+}; 
 let i = 0;
- while (i < 3) {
+while (i < 3) {
   isEvenGame();
-  i+=1;
- };
- console.log(`Congratulations, ${name}`)
+};
+console.log(`Congratulations, ${name}!`);
+
  
