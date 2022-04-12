@@ -4,3 +4,4 @@
 [![ESlint](https://github.com/aelnko/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/aelnko/frontend-project-lvl1/actions/workflows/eslint.yml)
 https://asciinema.org/a/4XkDeOMWYKUsjStDUXYVKTadw
 https://asciinema.org/a/whQ8EVHYuJGW9x6m5Ike59vIN
+https://asciinema.org/a/oHbS0IBHLqfTiBJjuzyISEX4q
