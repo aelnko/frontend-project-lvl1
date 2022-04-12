@@ -12,7 +12,7 @@ const greet = () => {
   const name = getName();
   const result = `Hello, ${name}!`;
   console.log(result);
-  return [result, name];
+  return name;
 };
 
 export { getAnswer, greet, getName };
