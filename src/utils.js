@@ -14,15 +14,17 @@ const getYourAnswer = () => {
 
 const getCorrectAnswer = (resultOfRandomizer) => {
   let result = '';
-  if (resultOfRandomizer % 2 === 0) {
-    result = 'yes';
-    return result;
-  }
-  if (resultOfRandomizer % 2 !== 0) {
-    result = 'no';
-    return result;
-  }
-  return;
+  const getResult = () => {
+    if (resultOfRandomizer % 2 === 0) {
+      result = 'yes';
+      return result;
+    }
+    if (resultOfRandomizer % 2 !== 0) {
+      result = 'no';
+      return result;
+    }
+  };
+  return getResult();
 };
 
 export { randomizer, getYourAnswer, getCorrectAnswer };

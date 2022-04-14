@@ -7,21 +7,23 @@ const getQuestionAndAnswer = () => {
   const firstNumber = randomizer();
   const secondNumber = randomizer();
   const question = `${firstNumber} ${secondNumber}`;
-  if (firstNumber > secondNumber) {
-    for (let i = secondNumber; i > 0; i -= 1) {
-      if (firstNumber % i === 0 && secondNumber % i === 0) {
-        const correctAnswer = String(i);
-        return [question, correctAnswer];
+  const getCorrectAnswer = () => {
+    if (firstNumber > secondNumber) {
+      for (let i = secondNumber; i > 0; i -= 1) {
+        if (firstNumber % i === 0 && secondNumber % i === 0) {
+          const correctAnswer = String(i);
+          return correctAnswer;
+        }
       }
     }
-  }
-  for (let j = firstNumber; j > 0; j -= 1) {
-    if (secondNumber % j === 0 && firstNumber % j === 0) {
-      const correctAnswer = String(j);
-      return [question, correctAnswer];
+    for (let j = firstNumber; j > 0; j -= 1) {
+      if (secondNumber % j === 0 && firstNumber % j === 0) {
+        const correctAnswer = String(j);
+        return correctAnswer;
+      }
     }
-  }
-  return;
+  };
+  return [question, getCorrectAnswer()];
 };
 
 export default () => {
