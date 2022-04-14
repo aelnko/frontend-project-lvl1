@@ -14,6 +14,7 @@ const playGame = (gameRules, getQuestionAndAnswer) => {
       i += 1;
     } else {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`)
     };
   };
   console.log(`Congratulations, ${name}!`);
