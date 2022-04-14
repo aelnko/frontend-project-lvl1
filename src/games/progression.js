@@ -9,8 +9,8 @@ const getProgression = () => {
   progression.push(startPoint);
   const step = randomizer(15);
   for (let i = 1; i < 10; i += 1) {
-    progression.push(progression[i-1]+step);
-  };
+    progression.push(progression[i - 1] + step);
+  }
   return progression;
 };
 
@@ -20,17 +20,17 @@ const getQuestionAndAnswer = () => {
   const indexOfHiddenElement = randomizer(10);
   progression[indexOfHiddenElement] = '..';
   let question = '';
-  for (const value of progression) {
-    question += `${value} `;
-  };
+  for (let i = 0; i < progression.length; i += 1) {
+    question += `${progression[i]} `;
+  }
   if (indexOfHiddenElement !== 0) {
     const correctAnswer = String(progression[indexOfHiddenElement - 1] + step);
     return [question, correctAnswer];
-  };
+  }
   const correctAnswer = String(progression[1] - step);
   return [question, correctAnswer];
 };
 
 export default () => {
   playGame(gameRules, getQuestionAndAnswer);
-}
+};

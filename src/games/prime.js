@@ -10,8 +10,8 @@ const getQuestionAndAnswer = () => {
     if (number % i === 0 || number === 1) {
       const correctAnswer = 'no';
       return [question, correctAnswer];
-    };
-  };
+    }
+  }
   const correctAnswer = 'yes';
   return [question, correctAnswer];
 };

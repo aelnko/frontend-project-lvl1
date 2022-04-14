@@ -4,8 +4,8 @@ const getAnswer = (question) => readlineSync.question(question);
 
 const getName = () => {
   const name = getAnswer('May I have your name? ');
-  return name
-}
+  return name;
+};
 
 const greet = () => {
   console.log('Welcome to the Brain Games!');

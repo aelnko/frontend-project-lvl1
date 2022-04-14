@@ -16,8 +16,8 @@ const playGame = (gameRules, getQuestionAndAnswer) => {
       console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${name}!`);
       return;
-    };
-  };
+    }
+  }
   console.log(`Congratulations, ${name}!`);
 };
-export default playGame ;
+export default playGame;

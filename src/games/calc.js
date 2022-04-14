@@ -14,12 +14,12 @@ const getQuestionAndAnswer = () => {
     const question = `${leftOperand} + ${rightOperand}`;
     const correctAnswer = leftOperand + rightOperand;
     return [question, String(correctAnswer)];
-  };
+  }
   if (operator === '-') {
     const question = `${leftOperand} - ${rightOperand}`;
     const correctAnswer = leftOperand - rightOperand;
     return [question, String(correctAnswer)];
-  };
+  }
   const question = `${leftOperand} * ${rightOperand}`;
   const correctAnswer = leftOperand * rightOperand;
   return [question, String(correctAnswer)];
@@ -27,4 +27,4 @@ const getQuestionAndAnswer = () => {
 
 export default () => {
   playGame(gameRules, getQuestionAndAnswer);
-}
+};
