@@ -7,7 +7,7 @@ const getQuestionAndAnswer = () => {
   const number = randomizer();
   const question = `${number}`;
   for (let i = 2; i <= Math.sqrt(number); i += 1) {
-    if (number % i === 0) {
+    if (number % i === 0 || number === 1) {
       const correctAnswer = 'no';
       return [question, correctAnswer];
     };
