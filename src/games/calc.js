@@ -18,10 +18,8 @@ const getQuestionAndAnswer = () => {
     const correctAnswer = leftOperand - rightOperand;
     return [question, String(correctAnswer)];
   };
-  if (operator === '*') {
-    const correctAnswer = leftOperand * rightOperand;
-    return [question, String(correctAnswer)];
-  };
+  const correctAnswer = leftOperand * rightOperand;
+  return [question, String(correctAnswer)];
 };
 
 export default () => {

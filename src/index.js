@@ -20,5 +20,4 @@ const playGame = (gameRules, getQuestionAndAnswer) => {
   };
   console.log(`Congratulations, ${name}!`);
 };
-
 export default playGame ;
