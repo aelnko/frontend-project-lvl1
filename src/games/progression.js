@@ -22,8 +22,12 @@ const getQuestionAndAnswer = () => {
   let question = '';
   for (const value of progression) {
     question += `${value} `;
-  }
-  const correctAnswer = String(progression[indexOfHiddenElement - 1] + step);
+  };
+  if (indexOfHiddenElement !== 0) {
+    const correctAnswer = String(progression[indexOfHiddenElement - 1] + step);
+    return [question, correctAnswer];
+  };
+  const correctAnswer = String(progression[1] - step);
   return [question, correctAnswer];
 };
 
