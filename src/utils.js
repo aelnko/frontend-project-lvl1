@@ -23,6 +23,7 @@ const getCorrectAnswer = (resultOfRandomizer) => {
       result = 'no';
       return result;
     }
+    return '';
   };
   return getResult();
 };

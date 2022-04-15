@@ -22,6 +22,7 @@ const getQuestionAndAnswer = () => {
         return correctAnswer;
       }
     }
+    return '';
   };
   return [question, getCorrectAnswer()];
 };
