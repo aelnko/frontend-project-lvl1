@@ -31,7 +31,7 @@
 Для установки выполните следующие команды:
 
 ```bash
-git clone git@github.com:julish13/brain-games.git
+git clone git@github.com:aelnko/brain-games.git
 cd brain-games
 make
 npm link
