@@ -36,6 +36,8 @@ cd brain-games
 make
 npm link
 ```
+
+[![Install](https://asciinema.org/a/ZcgaeR4EwPyOqUTGrEp5f5hJA.svg)](https://asciinema.org/a/ZcgaeR4EwPyOqUTGrEp5f5hJA)
 ## Игра "Проверка на чётность"
 
 Для запуска игры выполните команду:
