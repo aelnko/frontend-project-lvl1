@@ -37,7 +37,7 @@ make
 npm link
 ```
 
-[![Install](https://asciinema.org/a/ZcgaeR4EwPyOqUTGrEp5f5hJA.svg)](https://asciinema.org/a/ZcgaeR4EwPyOqUTGrEp5f5hJA)
+[![Install](https://asciinema.org/a/507611.svg)](https://asciinema.org/a/507611)
 ## Игра "Проверка на чётность"
 
 Для запуска игры выполните команду:
@@ -46,7 +46,7 @@ npm link
 brain-even
 ```
 
-[![Install](https://asciinema.org/a/Mlb5q4VudcVMtn4CRreTO2wUY.svg)](https://asciinema.org/a/Mlb5q4VudcVMtn4CRreTO2wUY)
+[![Play Brain-Even](https://asciinema.org/a/507613.svg)](https://asciinema.org/a/507613)
 ## Игра "Калькулятор"
 
 Для запуска игры выполните команду:
@@ -55,7 +55,7 @@ brain-even
 brain-calc
 ```
 
-[![Install](https://asciinema.org/a/JhWHFjaY7YXTvGGObEJP2h9bU.svg)](https://asciinema.org/a/JhWHFjaY7YXTvGGObEJP2h9bU)
+[![Play Brain-Calc](https://asciinema.org/a/507614.svg)](https://asciinema.org/a/507614)
 ## Игра "Наибольший общий делитель"
 
 Для запуска игры выполните команду:
@@ -64,7 +64,7 @@ brain-calc
 brain-gcd
 ```
 
-[![Install](https://asciinema.org/a/CNhxgpHBdLhpL4w3ZMQgiXWfL.svg)](https://asciinema.org/a/CNhxgpHBdLhpL4w3ZMQgiXWfL)
+[![Play Brain-Gcd](https://asciinema.org/a/507615.svg)](https://asciinema.org/a/507615)
 ## Игра "Арифметическая прогрессия"
 
 Для запуска игры выполните команду:
@@ -73,7 +73,7 @@ brain-gcd
 brain-progression
 ```
 
-[![Install](https://asciinema.org/a/9owWvK8YzZDHu7SdAFjmmnOEf.svg)](https://asciinema.org/a/9owWvK8YzZDHu7SdAFjmmnOEf)
+[![Play Brain-Progression](https://asciinema.org/a/507616.svg)](https://asciinema.org/a/507616)
 ## Игра "Простое ли число?"
 
 Для запуска игры выполните команду:
@@ -82,4 +82,4 @@ brain-progression
 brain-prime
 ```
 
-[![Install](https://asciinema.org/a/QVbouwCHlNHpZ6Rl7SCoskZ5S.svg)](https://asciinema.org/a/QVbouwCHlNHpZ6Rl7SCoskZ5S)
+[![Play Brain-Prime](https://asciinema.org/a/507617.svg)](https://asciinema.org/a/507617)
